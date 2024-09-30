@@ -1,0 +1,5 @@
+** install **
+
+- python
+- pygames
+- numpy
