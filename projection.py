@@ -16,7 +16,7 @@ class Projection:
         m22 = (FAR + NEAR) / (FAR - NEAR)
         m32 = -2 * NEAR * FAR / (FAR - NEAR)
         self.projection_matrix = np.array(
-            [[m00, 0, 0, 0], [0, m11, 0, 0], [0, 0, m22, 0], [0, 0, m32, 0]]
+            [[m00, 0, 0, 0], [0, m11, 0, 0], [0, 0, m22, 1], [0, 0, m32, 0]]
         )
 
         HW, HH = render.H_WIDTH, render.H_HEIGHT
